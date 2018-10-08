@@ -88,14 +88,14 @@ Four EduBfM_FlushAll(void)
 	for (i = 0; i < sizeof(bufInfo[0].hashTable) / 2; i++) {
 		idx = bufInfo[0].hashTable[i];
 		if (BI_BITS(0, idx) = 0) {
-			edubfm_FlushTrain(BI_KEY(0, idx));
+			edubfm_FlushTrain(BI_KEY(0, idx),type);
 		}
 	}
 
 	for (i = 0; i < sizeof(bufInfo[1].hashTable) / 2; i++) {
 		idx = bufInfo[1].hashTable[i];
 		if (BI_BITS(1, idx) = 0) {
-			edubfm_FlushTrain(BI_KEY(1, idx));
+			edubfm_FlushTrain(BI_KEY(1, idx),type);
 		}
 	}
     return( eNOERROR );

@@ -107,8 +107,8 @@ Four EduBfM_GetTrain(
 
     /* Is the buffer type valid? */
     if(IS_BAD_BUFFERTYPE(type)) ERR(eBADBUFFERTYPE_BFM);	
-
-
+	index=bufInfo[type].hashTable[((trainId)->volNo + (trainId)->pageNo) % HASHTABLESIZE(type)];
+	if(index==-1)
 
     return(eNOERROR);   /* No error */
 

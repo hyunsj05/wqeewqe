@@ -106,7 +106,7 @@ typedef struct {
  *  char *x     : string that represents the additional information of the train ID
  *  TrainID y   : train ID
  */
-#define PRINT_PAGEID(x, y)	\
+#define PRINT_PAGEID(x, y)	
     (y == NULL) ? printf("%s = NULL", (x)) :	\
     printf("%s = {%-2ld, %4ld}\n", (x), (y)->volNo, (y)->pageNo )
 
